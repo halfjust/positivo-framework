@@ -1,0 +1,72 @@
+$color-primary: #2196F3 !default;
+$color-primary-50: #BBDEFB !default;
+$color-primary-100: #BBDEFB !default;
+$color-primary-200: #90CAF9 !default;
+$color-primary-300: #64B5F6 !default;
+$color-primary-400: #42A5F5 !default;
+$color-primary-500: $color-primary;
+$color-primary-600: #1E88E5 !default;
+$color-primary-700: #1976D2 !default;
+$color-primary-800: #1565C0 !default;
+$color-primary-900: #0D47A1 !default;
+$color-accent: #42A5F5 !default;
+$color-text-primary: rgba(0, 0, 0, 0.87) !default;
+$color-text-secondary: rgba(0, 0, 0, 0.54) !default;
+$color-text-disabled: rgba(0, 0, 0, 0.54) !default;
+$color-disabled: rgba(0, 0, 0, 0.26) !default;
+$color-dividers: rgba(0, 0, 0, 0.12) !default;
+$color-black: #000 !default;
+$color-white: rgba(255, 255, 255, 1) !default;
+$color-gray-900: #212121;
+$color-gray-800: #424242;
+$color-gray-700: #303030;
+$color-gray-600: #757575;
+$color-gray-500: #9E9E9E;
+$color-gray-400: #BDBDBD;
+$color-gray-300: #E0E0E0;
+$color-gray-200: #EEEEEE;
+$color-gray-100: #F5F5F5;
+$color-gray-50: #FAFAFA;
+$color-success: #8BC34A !default;
+$color-info: #42a5f5 !default;
+$color-warning: #FF9800 !default;
+$color-danger: #FF7043 !default;
+$color-background: #E1E1E1 !default;
+
+//Todos os tamanhso permitidos no framework
+$sizes:(4, 8, 16, 24, 36, 48, 56, 72, 96, 128, 256, 512, 1024);
+
+$colors: ( color-primary: $color-primary, 
+color-primary-50: $color-primary-50, 
+color-primary-100: $color-primary-100, 
+color-primary-200: $color-primary-200, 
+color-primary-300: $color-primary-300, 
+color-primary-400: $color-primary-400, 
+color-primary-500: $color-primary-500, 
+color-primary-600: $color-primary-600,
+ color-primary-700: $color-primary-700, 
+ color-primary-800: $color-primary-800, 
+ color-primary-900: $color-primary-900, 
+ color-accent: $color-accent, 
+ color-text-primary: $color-text-primary, 
+ color-text-secondary: rgba(0, 0, 0, 0.54), 
+ color-text-disabled: rgba(0, 0, 0, 0.54), 
+ color-disabled: rgba(0, 0, 0, 0.26), 
+ color-dividers: rgba(0, 0, 0, 0.12), 
+ color-black: #000, 
+ color-white: rgba(255, 255, 255, 1), 
+ color-gray-900: $color-gray-900, 
+ color-gray-800: $color-gray-800, 
+ color-gray-700: $color-gray-700, 
+ color-gray-600: $color-gray-600, 
+ color-gray-500: $color-gray-500, 
+ color-gray-400: $color-gray-400, 
+ color-gray-300: $color-gray-300, 
+ color-gray-200: $color-gray-200, 
+ color-gray-100: $color-gray-100, 
+ color-gray-50: $color-gray-50, 
+ color-success: $color-success, 
+ color-info: $color-info, 
+ color-warning: $color-warning, 
+ color-danger: $color-danger, 
+ color-background: $color-background);

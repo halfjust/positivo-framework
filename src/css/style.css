@@ -1,0 +1,1021 @@
+/**** pre-requisitos
+• 1280px - Largura máxima do conteúdo
+• 1024px - pc/tablet
+• 768px - pc/tablet
+• 600px - tablet/mobile
+• 400px – mobile 
+• 360px – mobile 
+• 320px – mobile
+https://www.google.com.br/search?q=media+query+for+bootstrap+3&oq=%40media+for+boot&aqs=chrome.2.69i57j0l5.13799j0j7&sourceid=chrome&ie=UTF-8
+http://getbootstrap.com/css/
+https://gist.github.com/marioblas/ac317c37e9bfcf3a1c3a#file-bootstrap-3-media-queries-css
+
+****/
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+body {
+    /*background: url(../img/.png) no-repeat bottom center;*/
+    font-family: 'Gothic821 Cn BT';
+    background: #00cfed;
+    background: url(../img/bg-20caracol.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.m-t-1 {
+    margin-top: 1em;
+}
+
+.m-t-2 {
+    margin-top: 2em;
+}
+
+
+/* TIPOS DE CLASSES DAS CASAS*/
+
+.casa-none {
+    background: none !important;
+    width: 5em;
+    height: 4em;
+    border-style: none !important;
+    outline: none !important;
+}
+
+.full-w-margin-top {
+    height: 3em !important;
+    margin-top: 1em !important;
+}
+
+.full-h-margin-right {
+    width: 3em !important;
+    margin-right: 2em;
+}
+
+.half-margin-t-r {
+    height: 3em !important;
+    margin-top: 1em !important;
+    width: 3em !important;
+    margin-right: 2em !important;
+}
+
+.half-margin-t-l {
+    height: 3em !important;
+    margin-top: 1em !important;
+    width: 3em !important;
+    margin-left: 2em !important;
+}
+
+
+/* FIM DE CLASSES DAS CASAS*/
+
+h5.texto-botaogerar {
+    padding: 15px;
+}
+
+.botao-novatrilha {
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    padding: 44px 2px;
+    border-radius: 10px;
+    box-shadow: 0 3px #323F45;
+    background: url(../img/botao-novatrilha.png) no-repeat center center #29B9AC;
+    height: 10%;
+    background-size: 75%;
+    left: 25%;
+    top: 4%;
+    cursor: pointer;
+}
+
+h5.texto-botaogerar:hover {
+    color: #fff !important;
+}
+
+.botao-novatrilha:hover {
+    position: absolute;
+    z-index: 50;
+    color: #fff !important;
+    padding: 44px 2px;
+    border-radius: 10px;
+    box-shadow: 0 3px #323F45;
+    background: url("../img/botao-novatrilha.png") no-repeat center center #20a296;
+    height: 10%;
+    background-size: 75%;
+    left: 25%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.botao-voltar {
+    position: absolute;
+    z-index: 50;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px #f58500;
+    background: url(../img/botao-voltar.png) no-repeat center center #fcad26;
+    height: 9%;
+    border: 2px solid;
+    background-size: 60%;
+    left: 22%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.botao-voltar:hover {
+    position: absolute;
+    z-index: 50;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px #bf7216;
+    background: url(../img/botao-voltar.png) no-repeat center center #f58500;
+    height: 9%;
+    border: 2px solid;
+    background-size: 60%;
+    left: 22%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.logo {
+    background: no-repeat bottom center;
+    position: absolute;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    left: 45%;
+    top: 6em;
+    animation: 20s pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.placa {
+    background: no-repeat bottom center;
+    position: absolute;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    left: 45%;
+    top: 24em;
+    animation: 20s pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.nuvem {
+    filter: contrast(100%) !important;
+    filter: brightness(98%);
+    background-size: 45%;
+    background: no-repeat bottom center;
+    position: absolute;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    left: 35%;
+    top: 5em;
+    animation: 20s pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.background {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-position: center center;
+    height: auto;
+    float: none;
+    list-style: none;
+    width: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.balao {
+    background: url(../img/balao.png) no-repeat bottom center;
+    position: absolute;
+    height: 44.9%;
+    width: 130.5%;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    animation: 20s infinite ease-in-out;
+    right: 0;
+    animation-name: slidein;
+}
+
+.balao .animate-duration {
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-play-state: running;
+}
+
+.laranja {
+    border-radius: 40px;
+    background: #f9a736;
+    color: #fff;
+    box-shadow: 6px 6px #fff;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    padding: 21px 100px;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: none !important;
+}
+
+a:focus,
+a:hover {
+    color: none !important;
+    text-decoration: none !important;
+}
+
+a:focus,
+{
+    color: none !important;
+    text-decoration: none !important;
+}
+
+.button {
+    width: 10%;
+    height: 10%;
+    background: purple;
+    padding: 5%;
+}
+
+.btn {
+    text-shadow: #fff 1px 1px;
+    text-transform: capitalize;
+    font-family: 'Gothic821 Cn BT';
+    font-size: 1.9em;
+    left: 18%;
+    top: 75%;
+    cursor: pointer;
+    padding: 25px 100px;
+    display: inline-block;
+    margin: 15px 30px;
+    letter-spacing: 1px;
+    outline: none;
+    /*position: absolute;
+    z-index: 10;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    animation: 20s pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    border: 4px solid #B46517;
+    border-radius: 40px;
+    -webkit-box-shadow: #fff 6px 6px;
+    -moz-box-shadow: #fff 6px 6px;
+    box-shadow: #fff 6px 6px;
+    font-weight: 800;
+    color: #724117;
+    background-color: #f9a736;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#f9a736));
+    background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+    background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+    background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+    background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+    background-image: linear-gradient(to bottom, #ffc579, #fb9d23);
+}
+
+.btn:hover {
+    border: 4px solid #B46517;
+    background-color: #ffaf46;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+    background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+    background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+    background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+    background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+    background-image: linear-gradient(to bottom, #ffaf46, #e78404);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+}
+
+.btn:after {
+    content: '';
+    /*position: absolute;
+    z-index: -1;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn_2:after {
+    content: '';
+    /*position: absolute;
+    z-index: -1;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.verde {
+    padding: 21px 100px;
+    border: 4px solid #006838;
+    float: right;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1d06f), to(#3cb44c));
+    color: #006838;
+    box-shadow: 6px 6px #fff;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn_2 {
+    text-shadow: #fff 1px 1px;
+    text-transform: capitalize;
+    font-family: 'Gothic821 Cn BT';
+    font-size: 1.9em;
+    /*left: 62%;
+    top: 77%;*/
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    outline: none;
+    /*position: absolute;
+    z-index: 9;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    animation: 20s pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    border: 4px solid #006838;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9ecc6f), to(#4db952));
+    background-image: -webkit-linear-gradient(top, #9ecc6f, #4db952);
+    background-image: -moz-linear-gradient(top, #9ecc6f, #4db952);
+    background-image: -ms-linear-gradient(top, #9ecc6f, #4db952);
+    background-image: -o-linear-gradient(top, #9ecc6f, #4db952);
+    background-image: linear-gradient(to bottom, #9ecc6f, #4db952);
+}
+
+.btn_2.double-h-1 {
+    height: 8.5em;
+}
+
+.btn_2.double-h-2 {
+    height: 9.1em;
+}
+
+.btn_2:hover {
+    border: 4px solid #006838;
+    background-color: #006838;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+    background-image: -webkit-linear-gradient(top, #9ecc6f, #2e9a3c);
+    background-image: -moz-linear-gradient(top, #9ecc6f, #2e9a3c);
+    background-image: -ms-linear-gradient(top, #9ecc6f, #2e9a3c);
+    background-image: -o-linear-gradient(top, #9ecc6f, #2e9a3c);
+    background-image: linear-gradient(to bottom, #9ecc6f, #2e9a3c);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffaf46, endColorstr=#e78404);
+}
+
+.texto-camera {
+    text-align: center;
+    color: #774111;
+    text-shadow: #ffe15b 2px 1px;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 40%;
+    top: 15%;
+    line-height: 1em;
+    width: 320px;
+}
+
+.texto-vermelho {
+    text-align: center;
+    color: #ba0f1f;
+    text-shadow: #cea686 2px 1px;
+    position: absolute;
+    z-index: 9999;
+    margin: auto;
+    left: 40%;
+    top: 6%;
+    line-height: 1em;
+    width: 320px;
+}
+
+.num-casas {
+    left: 38% !important;
+}
+
+.texto-casas {
+    text-align: center center;
+    color: #774111;
+    text-shadow: #f7e490 2px 1px;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 34%;
+    top: 22%;
+    line-height: 1em;
+}
+
+.casa20 {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 40px;
+    text-shadow: 3px 2px #fbb826;
+    height: 15%;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    top: 35%;
+    left: 35%;
+    width: 4em;
+    height: 3.5em;
+}
+
+.casa20:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    height: 15%;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    height: 3.5em;
+}
+
+.casa32 {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 40px;
+    text-shadow: 3px 2px #fbb826;
+    height: 15%;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    top: 35%;
+    left: 50%;
+    width: 4em;
+    height: 3.5em;
+}
+
+.casa32:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    border: solid 1px #422213;
+    border-bottom: solid 3px #33180d;
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    height: 15%;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    height: 3.5em;
+}
+
+.texto-desenho {
+    text-align: center;
+    color: #774111;
+    text-shadow: #cea686 2px 1px;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 40%;
+    top: 60%;
+    line-height: 1em;
+    width: 320px;
+}
+
+.desenho-u {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 40px;
+    text-shadow: 3px 2px #fbb826;
+    height: 3.5em;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    top: 70%;
+    left: 30%;
+    width: 4em;
+}
+
+.desenho-u:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+}
+
+.desenho-caracol {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 40px;
+    text-shadow: 3px 2px #fbb826;
+    height: 3.5em;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    top: 70%;
+    left: 45%;
+    width: 4em;
+}
+
+.desenho-caracol:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    border: solid 1px #422213;
+    border-bottom: solid 3px #33180d;
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+}
+
+.desenho-z {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 40px;
+    text-shadow: 3px 2px #fbb826;
+    height: 3.5em;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    top: 70%;
+    left: 60%;
+    width: 4em;
+}
+
+.desenho-z:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    border: solid 1px #422213;
+    border-bottom: solid 3px #33180d;
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+}
+
+
+/* NUMERO DE CASAS 20 */
+
+.texto-u {
+    animation: 20s tada;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    top: 10% !important;
+}
+
+.casa-marrom {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    box-shadow: inset 0 10px 0 0 #a87c4f;
+    color: #774111;
+    font-size: 30px;
+    text-shadow: 3px 2px #fbb826;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+    width: 5em;
+    height: 4em;
+}
+
+.casa-marrom:hover {
+    background: #cea686;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cea686), to(#b98c62));
+    background: -moz-linear-gradient(#cea686, #b98c62);
+    background: linear-gradient(#cea686, #b98c62);
+    border: solid 1px #422213;
+    border-bottom: solid 3px #33180d;
+    box-shadow: inset 0 0 0 10px #a87c4f;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #754c28;
+}
+
+.casa-azul {
+    background: url(../img/surpresa.png), linear-gradient(#86ceca, #4fa7a8);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 0px 10px 0px #4fa7a8;
+    color: #774111;
+    font-size: 30px;
+    text-shadow: 3px 2px #fbb826;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #287572;
+    left: 8%;
+    width: 5em;
+    height: 4em;
+}
+
+.casa-azul:hover {
+    background: url(../img/surpresa.png), linear-gradient(#86ceca, #4fa7a8);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: solid 3px #287572;
+    box-shadow: inset 0px 10px 0px #4fa7a8;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #1e615e;
+}
+
+.casa-verde {
+    background: url(../img/surpresa.png), linear-gradient(#8ece86, #7eb976);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 0px 10px 0px #6eb665;
+    color: #774111;
+    font-size: 30px;
+    text-shadow: 3px 2px #fbb826;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #2e7528;
+    left: 8%;
+    width: 5em;
+    height: 4em;
+}
+
+.casa-verde:hover {
+    background: url(../img/surpresa.png), linear-gradient(#8ece86, #7eb976);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: solid 3px #2e7528;
+    box-shadow: inset 0px 10px 0px #6eb665;
+    text-shadow: 3px 2px #fbb826;
+    color: #774111;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #295d1f;
+}
+
+.casa-amarela {
+    background: url(../img/surpresa.png), linear-gradient(#ffe66e, #ffbc26);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 0px 10px 0px #ffbc26;
+    color: #774111;
+    font-size: 30px;
+    text-shadow: 3px 2px #fbb826;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #d97e2e;
+    left: 8%;
+    width: 5em;
+    height: 4em;
+}
+
+.casa-amarela:hover {
+    background: url(../img/surpresa.png), linear-gradient(#ffe66e, #ffbc26);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: solid 3px #2e7528;
+    box-shadow: inset 0px 10px 0px #ffbc26;
+    color: #774111;
+    font-size: 30px;
+    text-shadow: 3px 2px #fbb826;
+    text-align: center;
+    border-radius: 25px;
+    border: 15px solid #c65e03;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000!important;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10!important;
+    background-color: #000;
+}
+
+.modal-content-sorte {
+    border-radius: 1.3rem !important;
+    background: #23cf5f;
+}
+
+.sorte {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.modal-title-sorte {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 26px;
+    text-shadow: 2px 2px #177237;
+    margin: auto;
+}
+
+.subtitulo-carta-sorte {
+    color: #19b44f !important;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo-carta-sorte {
+    width: 100%;
+    color: #177237 !important;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    opacity: 0.8;
+    text-shadow: none !important;
+}
+
+.modal-dialog {
+    margin: 12px auto !important;
+    max-width: 499px !important;
+}
+
+.modal-body {
+    overflow-y: scroll;
+    height: 35em;
+    padding: 0px;
+}
+
+.modal-info:nth-child(n) {
+    height: 16rem;
+    background-repeat: no-repeat !important;
+    background: url('../img/museo.jpg');
+    background-size: cover;
+}
+
+.modal-info-guris:nth-child(n) {
+    height: 16rem;
+    background-repeat: no-repeat !important;
+    background: url('../img/guris.png');
+    background-size: cover;
+    position: relative;
+    margin-top: -16%;
+}
+
+.subtitulofixo-carta {
+    color: #fff !important;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+
+.barrafixa-carta-sorte {
+    text-transform: uppercase;
+    color: #095223;
+    text-shadow: 2px 2px #177237;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 4px;
+    text-shadow: none !important;
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+
+.passos-sorte {
+    color: #268217;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #94e8b1;
+    padding: 2%;
+}
+
+.audio {
+    width: 100% !important;
+}
+
+
+/*-- ESTILO CARTA AZAR ----*/
+
+.modal-content-azar {
+    border-radius: 1.3rem !important;
+    background: #b01222;
+}
+
+.azar {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.modal-title-azar {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 26px;
+    text-shadow: 2px 2px #6a141d;
+    margin: auto;
+}
+
+.subtitulo-carta-azar {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    color: #713f1c;
+}
+
+.titulo-carta-azar {
+    text-transform: uppercase;
+    width: 100%;
+    color: #b01222 !important;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    opacity: 0.8;
+    text-shadow: none !important;
+}
+
+.barrafixa-carta-azar {
+    color: #f4d4d8;
+    text-shadow: 2px 2px #6a141d;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 4px;
+    text-shadow: none !important;
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+
+.passos-azar {
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #be6f77;
+    padding: 2%;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 480px) {
+    .btn_2 {
+        font-size: 28px;
+        width: 2em;
+        height: 1.8em;
+        border: 2px solid #006838;
+        border-radius: 0.5em !important;
+        margin: 0.03em
+    }
+    .btn_2.double-h-1 {
+        height: 4.12em;
+    }
+    .btn_2.double-h-2 {
+        height: 4.43em;
+    }
+    .m-t-1 {
+        margin-top: 0.8em;
+    }
+    .m-t-2 {
+        margin-top: 1.4em;
+    }
+}
+
+
+/*
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1024px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*-- 32 CASAS ----*/

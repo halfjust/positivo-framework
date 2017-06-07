@@ -1,0 +1,16 @@
+//Você pode sobrepor valores padrões das variaveis do Settings
+//
+@import 'framework/settings';
+@import 'framework/media';
+//Sistema de Grid
+@import 'framework/grid';
+//Wrappers /Padding
+@import 'framework/wrappers';
+//Borders
+@import 'framework/borders';
+//Backgrounds
+@import 'framework/backgrounds';
+
+
+//pode ser removido, usado apenas para demonstração
+@import 'framework/test';

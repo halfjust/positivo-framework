@@ -1,0 +1,24 @@
+
+$small-a: 0em;
+$small-b : 40em;
+$medium-a: 40.063em;
+$medium-b : 64em;
+$large-a: 64.063em;
+$large-b: 90em;
+$xlarge-a: 90.063em;
+$xlarge-b: 120em;
+$xxlarge: 120.063em;
+
+
+$screen: "only screen";
+$landscape: "#{$screen}  and (orientation: landscape)";
+$portrait: "#{$screen}  and (orientation: portrait)";
+$small-up: $screen;
+$small-only: "#{$screen}  and (max-width:  #{$small-b} )";
+$medium-up: "#{$screen}  and ( min-width: #{$medium-a} )";
+$medium-only: "${$screen}  and ( min-width: #{$medium-a} ) and ( max-width: #{$medium-b} )";
+$large-up: "#{$screen} and (min-width:#{$large-a})";
+$large-only: "#{$screen}  and (min-width:${$large-a}) and (max-width:#{$large-b})";
+$xlarge-up: "#{$screen} and (min-width: #{$xlarge-a})";
+$xlarge-only: "#{$screen}  and (min-width: #{$xlarge-a}) and (max-width: #{$xlarge-b})";
+$xxlarge-up: "#{$screen}  and (min-width:#{$xxlarge})";

@@ -1,0 +1,602 @@
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin newcMainAlign($direction, $sizeName) {
+    >.c-#{$direction}-start-#{$sizeName} {
+        align-self: flex-start;
+        text-align: start;
+    }
+    >.c-#{$direction}-end-#{$sizeName} {
+        align-self: flex-end;
+        text-align: end;
+    }
+    >.c-#{$direction}-center-#{$sizeName} {
+        align-self: center;
+        text-align: center;
+    }
+    >.c-#{$direction}-auto-#{$sizeName} {
+        align-self: auto;
+    }
+    >.c-#{$direction}-baseline-#{$sizeName} {
+        align-self: baseline;
+    }
+    >.c-#{$direction}-stretch-#{$sizeName} {
+        align-self: stretch;
+    }
+}
+
+@mixin newcCrossAlign($direction, $sizeName) {
+    >.c-#{$direction}-start-#{$sizeName} {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    >.c-#{$direction}-end-#{$sizeName} {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    >.c-#{$direction}-center-#{$sizeName} {
+        align-items: center;
+        justify-content: center;
+    }
+    >.c-#{$direction}-baseline-#{$sizeName} {
+        align-items: baseline;
+    }
+    >.c-#{$direction}-stretch-#{$sizeName} {
+        align-items: stretch;
+    }
+}
+
+@mixin newgCrossAlign($direction, $sizeName) {
+    &.g-#{$direction}-start-#{$sizeName} {
+        align-items: flex-start;
+    }
+    &.g-#{$direction}-end-#{$sizeName} {
+        align-items: flex-end;
+    }
+    &.g-#{$direction}-center-#{$sizeName} {
+        align-items: center;
+    }
+    &.g-#{$direction}-baseline-#{$sizeName} {
+        align-items: baseline;
+    }
+    &.g-#{$direction}-stretch-#{$sizeName} {
+        align-items: stretch;
+    }
+}
+
+@mixin newgAlign($direction, $sizeName) {
+    /* Container Align*/
+    &.g-#{$direction}-start-#{$sizeName} {
+        justify-content: flex-start;
+    }
+    &.g-#{$direction}-end-#{$sizeName} {
+        justify-content: flex-end;
+    }
+    &.g-#{$direction}-center-#{$sizeName} {
+        justify-content: center;
+    }
+    &.g-#{$direction}-space-between-#{$sizeName} {
+        justify-content: space-between;
+    }
+    &.g-#{$direction}-space-around-#{$sizeName} {
+        justify-content: space-around;
+    }
+}
+
+
+/*Odisseia g*/
+
+@mixin gDirection($size) {
+    //align g
+    [class*="g-rows"] {
+        width: 100%;
+        display: -moz-box;
+        display: flex;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        @include newcMainAlign(horizontal, $size);
+        @include newcCrossAlign(vertical, $size);
+        @include newgAlign(vertical, $size);
+        @include newgCrossAlign(horizontal, $size);
+    }
+    [class*="g-columns"] {
+        width: 100%;
+        display: -moz-box;
+        display: flex;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        @include newcMainAlign(horizontal, $size);
+        @include newcCrossAlign(vertical, $size);
+        @include newgAlign(horizontal, $size);
+        @include newgCrossAlign(vertical, $size);
+    }
+    /* Container Directions */
+    .g-rows-#{$size} {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .g-rows-reverse-#{$size} {
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .g-columns-#{$size} {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .g-columns-reverse-#{$size} {
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
+@mixin gAlign($size) {
+    /* Container Align*/
+    .g-#{$size}-main-align-start {
+        justify-content: flex-start;
+    }
+    .g-#{$size}-main-align-end {
+        justify-content: flex-end;
+    }
+    .g-#{$size}-main-align-center {
+        justify-content: center;
+    }
+    .g-#{$size}-main-align-space-between {
+        justify-content: space-between;
+    }
+    .g-#{$size}-main-align-space-around {
+        justify-content: space-around;
+    }
+    .g-#{$size}-cross-align-start {
+        align-items: flex-start;
+    }
+    .g-#{$size}-cross-align-end {
+        align-items: flex-end;
+    }
+    .g-#{$size}-cross-align-center {
+        align-items: center;
+    }
+    .g-#{$size}-cross-align-baseline {
+        align-items: baseline;
+    }
+    .g-#{$size}-cross-align-stretch {
+        align-items: stretch;
+    }
+}
+
+@mixin cColumns($sizeName) {
+    .c-#{$sizeName}-1 {
+        flex-basis: 8.333333333%;
+        min-width: 8.333333333%;
+        max-width: 8.333333333%;
+    }
+    .c-#{$sizeName}-2 {
+        flex-basis: 16.666666667%;
+        min-width: 16.666666667%;
+        max-width: 16.666666667%;
+    }
+    .c-#{$sizeName}-3 {
+        flex-basis: 25%;
+        min-width: 25%;
+        max-width: 25%;
+    }
+    .c-#{$sizeName}-4 {
+        flex-basis: 33.333333333%;
+        min-width: 33.333333333%;
+        max-width: 33.333333333%;
+    }
+    .c-#{$sizeName}-5 {
+        flex-basis: 41.666666667%;
+        min-width: 41.666666667%;
+        max-width: 41.666666667%;
+    }
+    .c-#{$sizeName}-6 {
+        flex-basis: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+    .c-#{$sizeName}-7 {
+        flex-basis: 58.333333333%;
+        min-width: 58.333333333%;
+        max-width: 58.333333333%;
+    }
+    .c-#{$sizeName}-8 {
+        flex-basis: 66.666666667%;
+        min-width: 66.666666667%;
+        max-width: 66.666666667%;
+    }
+    .c-#{$sizeName}-9 {
+        flex-basis: 75%;
+        min-width: 75%;
+        max-width: 75%;
+    }
+    .c-#{$sizeName}-10 {
+        flex-basis: 83.333333333%;
+        min-width: 83.333333333%;
+        max-width: 83.333333333%;
+    }
+    .c-#{$sizeName}-11 {
+        flex-basis: 91.666666667%;
+        min-width: 91.666666667%;
+        max-width: 91.666666667%;
+    }
+    .c-#{$sizeName}-12 {
+        flex-basis: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@mixin cAlign($sizeName) {
+    .c-#{$sizeName}-align-start {
+        align-self: flex-start;
+        text-align: start;
+    }
+    .c-#{$sizeName}-align-end {
+        align-self: flex-end;
+        text-align: end;
+    }
+    .c-#{$sizeName}-align-center {
+        align-self: center;
+        text-align: center;
+    }
+    .c-#{$sizeName}-align-auto {
+        align-self: auto;
+    }
+    .c-#{$sizeName}-align-baseline {
+        align-self: baseline;
+    }
+    .c-#{$sizeName}-align-stretch {
+        align-self: stretch;
+    }
+}
+
+@mixin cCrossAlign($sizeName) {
+    .c-#{$sizeName}-cross-align-start {
+        align-items: flex-start;
+    }
+    .c-#{$sizeName}-cross-align-end {
+        align-items: flex-end;
+    }
+    .c-#{$sizeName}-cross-align-center {
+        align-items: center;
+        justify-content: center;
+    }
+    .c-#{$sizeName}-align-baseline {
+        align-items: baseline;
+    }
+    .c-#{$sizeName}-cross-align-stretch {
+        align-items: stretch;
+    }
+}
+
+//
+.g-full {
+    width: 100%;
+    height: 100%;
+}
+
+.g--position-relative {
+    position: relative;
+}
+
+.g-full-h {
+    height: 100%;
+    max-height: 100%;
+}
+
+.g-full-w {
+    width: 100%;
+}
+
+.c-scroll-vertical,
+.g-scroll-vertical {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 0;
+    overflow-x: hidden;
+    flex: auto !important;
+    max-height: 100%;
+    height: 100%;
+    .c-scroll-vertical>* {
+        min-height: 0;
+    }
+}
+
+.c-scroll-horizontal,
+.g-scroll-horizontal {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-width: 0;
+    overflow-x: auto;
+}
+
+.c-relative {
+    position: relative;
+}
+
+.c-absolute {
+    position: absolute;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+@mixin cShrink() {
+    @for $i from 1 through 12 {
+        .c-shrink-#{$i} {
+            flex-shrink: $i !important;
+        }
+    }
+}
+
+@mixin cGrow() {
+    @for $i from 1 through 12 {
+        .c-grow-#{$i} {
+            flex-grow: $i !important;
+        }
+    }
+}
+
+@include cShrink();
+@include cGrow();
+.c-no-scroll {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+.c-scroll-horizontal {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    min-width: 0;
+    overflow-y: hidden;
+}
+
+.c--position-absolute {
+    position: absolute;
+}
+
+// .g {
+//     width: 100%;
+//     display: -moz-box;
+//     display: flex; //height: inherit;
+//     -webkit-flex-direction: row;
+//     -ms-flex-direction: row;
+//     flex-direction: row;
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+.g-wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.g-wrap-reverse {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.g-nowrap {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+@include gDirection(sm);
+@include gAlign(sm);
+@media #{$medium-up} {
+    @include gDirection(md);
+    @include gAlign(md);
+}
+
+@media #{$large-up} {
+    @include gDirection(lg);
+    @include gAlign(lg);
+}
+
+.c {
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    text-align: start;
+    display: -moz-box;
+    display: flex; //se no shrink in default
+    flex-shrink: 0;
+}
+
+
+/* c Align*/
+
+@include cAlign(sm);
+@include cCrossAlign(sm);
+@include cColumns(sm);
+
+/* c Responsive */
+
+@media #{$medium-up} {
+    @include cAlign(md);
+    @include cCrossAlign(md);
+    @include cColumns(md);
+}
+
+@media #{$large-up} {
+    @include cAlign(lg);
+    @include cCrossAlign(lg);
+    @include cColumns(lg);
+}
+
+.c-auto {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    max-height: 100%;
+    height: 100%;
+}
+
+.c-1-auto {
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    min-height: 0;
+}
+
+.c-1-1-auto {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.c-1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.c-full-w {
+    min-width: 100%;
+}
+
+.c-full-h {
+    height: 100%;
+}
+
+.c-no-shrink {
+    flex-shrink: 0;
+}
+
+.c-shrink {
+    flex-shrink: 1 !important;
+}
+
+.c-no-grow {
+    flex-grow: 0;
+}
+
+.c-order-1 {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.c-order-2 {
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+
+/*#region w-8, w-16, etc... */
+
+@for $i from 0 to length($sizes) {
+    .w-#{nth($sizes,$i+1)} {
+        width: nth($sizes, $i+1)+px;
+    }
+}
+
+
+/*#region wrapper-8, wrapper-16, etc... */
+
+
+/* Border Radius */
+
+.r {
+    border-radius: 2px 2px 2px 2px
+}
+
+.r-2x {
+    border-radius: 4px
+}
+
+.r-3x {
+    border-radius: 6px !important;
+}
+
+.r-l {
+    border-radius: 2px 0 0 2px !important;
+}
+
+.r-r {
+    border-radius: 0 2px 2px 0 !important;
+}
+
+.r-t {
+    border-radius: 2px 2px 0 0 !important;
+}
+
+.r-b {
+    border-radius: 0 0 2px 2px !important;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.m-n {
+    margin: 0 !important
+}
+
+@for $i from 0 to length($sizes) {
+    .m-#{nth($sizes,$i+1)} {
+        margin: nth($sizes, $i+1)+px !important;
+    }
+}
+
+.m-l-none {
+    margin-left: 0 !important
+}
+
+@for $i from 0 to length($sizes) {
+    .m-l-#{nth($sizes,$i+1)} {
+        margin-left: nth($sizes, $i+1)+px !important;
+    }
+}
+
+.m-t-none {
+    margin-top: 0 !important
+}
+
+@for $i from 0 to length($sizes) {
+    .m-t-#{nth($sizes,$i+1)} {
+        margin-top: nth($sizes, $i+1)+px !important;
+    }
+}
+
+.m-r-none {
+    margin-right: 0 !important
+}
+
+@for $i from 0 to length($sizes) {
+    .m-r-#{nth($sizes,$i+1)} {
+        margin-right: nth($sizes, $i+1)+px !important;
+    }
+}
+
+.m-b-none {
+    margin-bottom: 0 !important
+}
+
+@for $i from 0 to length($sizes) {
+    .m-b-#{nth($sizes,$i+1)} {
+        margin-bottom: nth($sizes, $i+1)+px !important;
+    }
+}
+
+
+/*#endregion */

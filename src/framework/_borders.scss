@@ -1,0 +1,70 @@
+/*#endregion */
+
+.b-a {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.b-t {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.b-r {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.b-b {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.b-l {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@each $name,
+$color in $colors {
+    .b-#{$name} {
+        border-color: $color !important;
+    }
+}
+
+.b-dashed {
+    border-style: dashed !important
+}
+
+.b-l-2x {
+    border-left-width: 2px
+}
+
+.b-l-3x {
+    border-left-width: 3px
+}
+
+.b-l-4x {
+    border-left-width: 4px
+}
+
+.b-l-5x {
+    border-left-width: 5px
+}
+
+.b-2x {
+    border-width: 2px
+}
+
+.b-3x {
+    border-width: 3px
+}
+
+.b-4x {
+    border-width: 4px
+}
+
+.b-5x {
+    border-width: 5px
+}
+
+.no-border,
+.no-borders {
+    border-color: transparent;
+    border-width: 0;
+}

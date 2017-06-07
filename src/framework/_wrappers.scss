@@ -1,0 +1,8 @@
+@import 'settings';
+
+
+@for $i from 0 to length($sizes) {
+    .wrapper-#{nth($sizes,$i+1)} {
+        padding: nth($sizes, $i+1)+px;
+    }
+}

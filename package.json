@@ -1,0 +1,37 @@
+{
+  "name": "positivo",
+  "version": "1.0.0",
+  "description": "Andrea Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server src  --port=8000 --wait=1000 --host=10.10.0.246"
+  },
+  "keywords": [
+    "grid"
+  ],
+  "author": "Andrea",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-electron": "^0.1.3",
+    "gulp-gzip": "^1.4.0",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "gulp-minify": "0.0.15",
+    "gulp-rename": "^1.2.2",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tap": "^0.4.2",
+    "gulp-tslint": "^6.1.1 ",
+    "gulp-typescript": "3.1.5",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "gulpclass": "^0.1.1",
+    "live-server": "^1.2.0"
+  }
+}
