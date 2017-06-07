@@ -27,9 +27,9 @@ As classes de responsividade são explicadas mais adiante.
 
 ## g-columns-sm ou g-rows-sm
 
-    g-column-sm : serve para indicar que a div atual é um container que agrupa suas células (filhos) em colunas
+**g-column-sm** : serve para indicar que o item atual é um container que agrupa suas células em colunas (Cada filho em uma coluna dinâmica)
 
-    g-rows-sm : serve para indicar que a div atual é um container que agrupa suas células (filhos) em colunas
+**g-rows-sm** : serve para indicar que a item atual é um container que agrupa suas células em linhas (cada filho em uma linha)
 
 ## c
     c : Representam as células de um grid
