@@ -217,9 +217,10 @@ Criaremos um item de lista com uma imagem, um título e uma descrição
 
      <div class="g-rows-sm">
 
-        <!--Primeira Linha-->
+        <!--Uma Linha-->
         <div class="c ">
-            <!-- Dividindo o em duas colunas-->
+
+            <!-- Dividindo a linha em duas colunas-->
             <div class="g-columns-sm g-vertical-center-sm">
                 
                 <!--Coluna A -->
@@ -229,8 +230,11 @@ Criaremos um item de lista com uma imagem, um título e uma descrição
 
                 <!--Coluna B-->
                 <div class="c ">
+                    <!--A Coluna B é divida novamente em duas linhas-->
                     <div class="g-rows-sm">
+                        <!--Linha do Titulo-->
                         <div class="c">Titulo</div>
+                        <!--Linha da descrição-->
                         <div class="c">Descrição bla bla bla bla</div>
                     </div>
                 </div>
