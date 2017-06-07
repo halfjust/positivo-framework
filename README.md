@@ -207,3 +207,42 @@ g-vertical-end-sm
 ```
 E: Vertical-Center / Horizontal-End 
 ![alt text](./src/docs/images/g_vertical_center_horizontal_end.jpg "Grid em linhas e centralizado no centro")
+
+
+## Exemplos
+Para facilitar o entendimento, vamos criar um componente simples de lista para fixar melhor os conceitos.
+
+Criaremos um item de lista com uma imagem, um título e uma descrição
+```xml
+
+     <div class="g-rows-sm">
+
+        <!--Primeira Linha-->
+        <div class="c ">
+            <!-- Dividindo o em duas colunas-->
+            <div class="g-columns-sm g-vertical-center-sm">
+                
+                <!--Coluna A -->
+                <div class="c ">
+                    <img src="data:image/png;base64,..."  alt="">
+                </div>
+
+                <!--Coluna B-->
+                <div class="c ">
+                    <div class="g-rows-sm">
+                        <div class="c">Titulo</div>
+                        <div class="c">Descrição bla bla bla bla</div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+
+```
+Compose: 
+![alt text](./src/docs/images/compose_a.jpg "Grid em linhas e centralizado no centro")
+
+
+
+
