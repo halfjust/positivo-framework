@@ -4,12 +4,13 @@
 
 # Sistema de posicionamento em Flex Box
 
-o sistema de Grids criado leva em consideração as últimas novidades dos sistemas de grids antigos e a aplicação de dos conceitos de flexbox atuais.
+o sistema de grids criado leva em consideração as últimas novidades dos sistemas de grids antigos e a aplicação dos conceitos de flexbox atuais.
 
-o Posicionamento dos itens na tela dependem do entendimento do conceito aqui empregado.
+O posicionamento dos itens na tela dependem do entendimento do conceito aqui empregado.
 
-* Grid
-O grid é o termo usado para o coantainer.
+* Grid 
+O grid é o termo usado para o container.
+
 O *Container* possui responsabilidade sobre os itens filhos diretos.
 
 * Célula
@@ -18,7 +19,9 @@ Entendemos como célula um item que é filho e respeita as diretivas de um pai *
 O Grid sempre virá indicando se seus filhos serão posicionados em *colunas* ou em *linhas*.
 
 * As classes do grid incorporam conceitos de responsividade 
-Classes com o sufixo *-sm* indicam que sua regra é valida para dispositivos mobile ou superiores. Este conceito continua com *-md* (Tablets) e assim por diante...
+Classes com o sufixo *-sm* indicam que sua regra é valida para dispositivos mobile ou superiores. 
+Classes com o sufixo *-md* indicam que sua regra é valida **somente** para dispositivos tablets ou superiores. Este conceito continua com *-lg*.
+As classes de responsividade são explicadas mais adiante.
 
 # Classes do Grid
 
@@ -27,7 +30,6 @@ Classes com o sufixo *-sm* indicam que sua regra é valida para dispositivos mob
     g-column-sm : serve para indicar que a div atual é um container que agrupa suas células (filhos) em colunas
 
     g-rows-sm : serve para indicar que a div atual é um container que agrupa suas células (filhos) em colunas
-
 
 ## c
     c : Representam as células de um grid
@@ -118,3 +120,90 @@ g-horizontal-center-sm
 
 C: Centralizados no centro 
 ![alt text](./src/docs/images/c.jpg "Grid em linhas e centralizado no centro")
+
+
+--
+
+
+```xml
+g-horizontal-end-sm
+```
+
+```xml
+<div class="g-rows-sm g-horizontal-end-sm  bg-color-primary">
+        <!--1 coluna-->
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div>
+
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div>
+
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div>
+
+    </div>
+```
+D: Centralizados no fim (end) 
+![alt text](./src/docs/images/d.jpg "Grid em linhas e centralizado no centro")
+
+
+
+
+
+```xml
+g-vertical-center-sm
+```
+
+```xml
+
+    <div class="g-rows-sm g-vertical-center-sm  bg-color-primary g-full-h">
+        <!--1 coluna-->
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div> 
+    </div>
+
+```
+D: Vertical / Centralizado 
+![alt text](./src/docs/images/g_vertical_center.jpg "Grid em linhas e centralizado no centro")
+
+
+-------------------
+```xml
+g-vertical-end-sm
+```
+
+```xml
+
+     <div class="g-rows-sm g-vertical-end-sm  bg-color-primary g-full-h">
+        <!--1 coluna-->
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div> 
+    </div>
+
+```
+D: Vertical / End 
+![alt text](./src/docs/images/g_vertical_end.jpg "Grid em linhas e centralizado no centro")
+
+
+## Juntando as propriedades de alinhamento Horizontal e Vertical
+```xml
+g-vertical-end-sm
+```
+
+```xml
+
+     <div class="g-rows-sm g-vertical-center-sm g-horizontal-end-sm bg-color-primary g-full-h">
+        <!--1 coluna-->
+        <div class="c wrapper-24">
+            <div class="test-card"> </div>
+        </div> 
+    </div>
+
+```
+E: Vertical-Center / Horizontal-End 
+![alt text](./src/docs/images/g_vertical_center_horizontal_end.jpg "Grid em linhas e centralizado no centro")
